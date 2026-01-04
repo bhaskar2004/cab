@@ -10,13 +10,6 @@ export function HeroSection({ onBookNowClick }: HeroSectionProps) {
     <section className="relative min-h-screen flex items-center justify-center pt-20 pb-12 sm:pb-16 overflow-hidden bg-background">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-5xl mx-auto text-center space-y-6 sm:space-y-8 md:space-y-10">
-          {/* Badge */}
-          <div className="inline-flex items-center justify-center">
-            <div className="px-4 sm:px-6 py-2 bg-primary/10 border border-primary/30 rounded-full">
-              <p className="text-[10px] sm:text-xs font-bold tracking-[0.2em] sm:tracking-[0.3em] uppercase text-primary">Premium Service Since 2015</p>
-            </div>
-          </div>
-
           {/* Main Heading */}
           <div className="space-y-6">
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-8xl xl:text-9xl font-bold leading-[0.9] tracking-tight">
