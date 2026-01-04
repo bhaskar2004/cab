@@ -1,7 +1,11 @@
+"use client"
+
 import { Phone, Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
 import Image from "next/image"
+import { useTranslations } from 'next-intl'
+import { LanguageSwitcher } from "@/components/language-switcher"
 
 interface NavigationProps {
   onBookNowClick?: () => void
@@ -9,6 +13,7 @@ interface NavigationProps {
 
 export function Navigation({ onBookNowClick }: NavigationProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
+  const t = useTranslations('nav')
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id)
@@ -19,10 +24,10 @@ export function Navigation({ onBookNowClick }: NavigationProps) {
   }
 
   const navItems = [
-    { id: "services", label: "Fleet" },
-    { id: "features", label: "Features" },
-    { id: "booking", label: "Book Now" },
-    { id: "contact", label: "Contact" },
+    { id: "services", label: t('fleet') },
+    { id: "features", label: t('features') },
+    { id: "booking", label: t('bookNow') },
+    { id: "contact", label: t('contact') },
   ]
 
   return (
@@ -33,14 +38,15 @@ export function Navigation({ onBookNowClick }: NavigationProps) {
             <Image
               src="/favicon.png"
               alt="Best Cab Service Logo"
-              width={48}
-              height={48}
-              className="w-12 h-12 object-contain"
+              width={64}
+              height={64}
+              priority
+              className="w-14 h-14 sm:w-16 sm:h-16 object-contain"
             />
             <div className="hidden sm:flex flex-col">
-              <span className="font-bold text-lg tracking-tight uppercase">Best Cab Service</span>
+              <span className="font-bold text-lg tracking-tight uppercase">{t('brandName')}</span>
               <span className="text-[10px] text-muted-foreground font-bold tracking-[0.2em] uppercase">
-                Gauribidanur
+                {t('location')}
               </span>
             </div>
           </div>
@@ -58,6 +64,8 @@ export function Navigation({ onBookNowClick }: NavigationProps) {
           </div>
 
           <div className="flex items-center gap-4">
+            <LanguageSwitcher />
+
             <a href="tel:9019416460" className="hidden sm:block">
               <Button
                 variant="outline"

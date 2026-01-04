@@ -1,41 +1,46 @@
+"use client"
+
 import { Clock, Car, Shield, DollarSign } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-
-const features = [
-  {
-    icon: Clock,
-    title: "On-Time Pickup",
-    description: "Punctual service ensuring you reach your destination on time, every time.",
-    color: "primary",
-  },
-  {
-    icon: Car,
-    title: "Clean Vehicles",
-    description: "Well-maintained and spotlessly clean cars for a comfortable ride.",
-    color: "accent",
-  },
-  {
-    icon: Shield,
-    title: "Experienced Drivers",
-    description: "Professional, courteous drivers with extensive local knowledge.",
-    color: "secondary",
-  },
-  {
-    icon: DollarSign,
-    title: "Affordable Pricing",
-    description: "Transparent pricing with no hidden charges. Best rates guaranteed.",
-    color: "primary",
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function FeaturesSection() {
+  const t = useTranslations('features')
+
+  const features = [
+    {
+      icon: Clock,
+      title: t('items.onTimePickup.title'),
+      description: t('items.onTimePickup.description'),
+      color: "primary",
+    },
+    {
+      icon: Car,
+      title: t('items.cleanVehicles.title'),
+      description: t('items.cleanVehicles.description'),
+      color: "accent",
+    },
+    {
+      icon: Shield,
+      title: t('items.experiencedDrivers.title'),
+      description: t('items.experiencedDrivers.description'),
+      color: "secondary",
+    },
+    {
+      icon: DollarSign,
+      title: t('items.affordablePricing.title'),
+      description: t('items.affordablePricing.description'),
+      color: "primary",
+    },
+  ]
+
   return (
     <section id="features" className="py-12 sm:py-16 md:py-20 lg:py-32">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">Why Choose Us</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">{t('heading')}</h2>
           <p className="text-sm sm:text-base md:text-lg text-foreground/60 max-w-2xl mx-auto text-pretty leading-relaxed font-light px-4 sm:px-0">
-            Experience the difference with our reliable and customer-focused cab service
+            {t('description')}
           </p>
         </div>
 

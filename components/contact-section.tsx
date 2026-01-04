@@ -1,23 +1,27 @@
+"use client"
+
 import { Phone, MessageCircle, MapPin } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { useTranslations } from 'next-intl'
 
 const contacts = [
   {
     name: "Praveen",
     phone: "9019416460",
     icon: Phone,
-    role: "Primary Contact",
+    role: "primaryContact",
   },
   {
     name: "Yashu",
     phone: "7026639927",
     icon: Phone,
-    role: "Secondary Contact",
+    role: "secondaryContact",
   },
 ]
 
 export function ContactSection() {
+  const t = useTranslations('contact')
   return (
     <section id="contact" className="py-12 sm:py-16 md:py-20 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
@@ -25,9 +29,9 @@ export function ContactSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">Get In Touch</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">{t('heading')}</h2>
           <p className="text-sm sm:text-base md:text-lg text-foreground/60 max-w-2xl mx-auto text-pretty leading-relaxed font-light px-4 sm:px-0">
-            Ready to book your ride? Contact us anytime - we're here to serve you 24/7
+            {t('description')}
           </p>
         </div>
 
@@ -46,7 +50,7 @@ export function ContactSection() {
                     </div>
                     <div>
                       <h3 className="text-2xl sm:text-3xl font-bold tracking-tight">{contact.name}</h3>
-                      <p className="text-sm sm:text-base text-foreground/60 font-light">{contact.role}</p>
+                      <p className="text-sm sm:text-base text-foreground/60 font-light">{t(contact.role)}</p>
                     </div>
                   </div>
 
@@ -57,7 +61,7 @@ export function ContactSection() {
                         className="w-full gap-2 sm:gap-3 text-sm sm:text-base h-12 sm:h-14 border-2 border-primary/40 bg-transparent hover:bg-primary/10 font-semibold"
                       >
                         <Phone className="w-4 h-4 sm:w-5 sm:h-5" />
-                        Call {contact.phone}
+                        {t('call')} {contact.phone}
                       </Button>
                     </a>
 
@@ -72,7 +76,7 @@ export function ContactSection() {
                         className="w-full gap-2 sm:gap-3 text-sm sm:text-base h-12 sm:h-14 border-2 border-primary/40 bg-transparent hover:bg-primary/10 font-medium"
                       >
                         <MessageCircle className="w-4 h-4 sm:w-5 sm:h-5 text-blue-400" />
-                        WhatsApp
+                        {t('whatsapp')}
                       </Button>
                     </a>
                   </div>
@@ -90,14 +94,14 @@ export function ContactSection() {
                   <MapPin className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 text-blue-400" />
                 </div>
                 <div className="flex-1">
-                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 tracking-tight">Service Area</h3>
+                  <h3 className="text-xl sm:text-2xl font-bold mb-3 sm:mb-4 tracking-tight">{t('serviceArea.heading')}</h3>
                   <p className="text-base sm:text-lg text-foreground font-medium leading-relaxed">
-                    Gauribidanur - 561208
+                    {t('serviceArea.location')}
                     <br />
-                    Chikkaballapur District, Karnataka
+                    {t('serviceArea.district')}
                   </p>
                   <p className="text-sm text-foreground/60 mt-4 leading-relaxed font-light">
-                    We proudly serve Gauribidanur and all surrounding areas for both local trips and outstation journeys
+                    {t('serviceArea.description')}
                   </p>
                 </div>
               </div>

@@ -1,26 +1,39 @@
+"use client"
+
 import { Users, Car, MapPin, Clock } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
-
-const services = [
-  {
-    icon: Car,
-    title: "5-Seater Cabs",
-    description: "Perfect for families and small groups. Comfortable sedans for local and outstation trips.",
-    features: ["Sedan Cars", "AC Available", "Spacious Luggage"],
-    image: "/fiveSeater.png",
-    gradient: "from-primary/20 to-accent/20",
-  },
-  {
-    icon: Users,
-    title: "7-Seater Cabs",
-    description: "Ideal for larger groups and family trips. Spacious SUVs and MPVs with ample room.",
-    features: ["SUV / MPV", "AC Available", "Extra Luggage Space"],
-    image: "/sevenSeater.png",
-    gradient: "from-accent/20 to-secondary/20",
-  },
-]
+import { useTranslations } from 'next-intl'
 
 export function ServicesSection() {
+  const t = useTranslations('services')
+
+  const services = [
+    {
+      icon: Car,
+      title: t('vehicles.fiveSeater.title'),
+      description: t('vehicles.fiveSeater.description'),
+      features: [
+        t('vehicles.fiveSeater.features.sedan'),
+        t('vehicles.fiveSeater.features.ac'),
+        t('vehicles.fiveSeater.features.luggage')
+      ],
+      image: "/fiveSeater.png",
+      gradient: "from-primary/20 to-accent/20",
+    },
+    {
+      icon: Users,
+      title: t('vehicles.sevenSeater.title'),
+      description: t('vehicles.sevenSeater.description'),
+      features: [
+        t('vehicles.sevenSeater.features.suvMpv'),
+        t('vehicles.sevenSeater.features.ac'),
+        t('vehicles.sevenSeater.features.luggage')
+      ],
+      image: "/sevenSeater.png",
+      gradient: "from-accent/20 to-secondary/20",
+    },
+  ]
+
   return (
     <section id="services" className="py-12 sm:py-16 md:py-20 lg:py-32 relative overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
@@ -28,9 +41,9 @@ export function ServicesSection() {
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="text-center mb-10 sm:mb-12 md:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">Our Fleet</h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold mb-4 sm:mb-6 text-balance tracking-tight">{t('heading')}</h2>
           <p className="text-sm sm:text-base md:text-lg text-foreground/60 max-w-2xl mx-auto text-pretty leading-relaxed font-light px-4 sm:px-0">
-            Choose from our range of comfortable and well-maintained vehicles for your perfect journey
+            {t('description')}
           </p>
         </div>
 
@@ -81,13 +94,13 @@ export function ServicesSection() {
                   <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                     <MapPin className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
                   </div>
-                  <span className="font-semibold text-sm sm:text-base md:text-lg">Local & Outstation</span>
+                  <span className="font-semibold text-sm sm:text-base md:text-lg">{t('localOutstation')}</span>
                 </div>
                 <div className="flex items-center gap-2 sm:gap-3">
                   <div className="w-10 h-10 sm:w-12 sm:h-12 flex items-center justify-center">
                     <Clock className="w-5 h-5 sm:w-6 sm:h-6 text-blue-400" />
                   </div>
-                  <span className="font-semibold text-sm sm:text-base md:text-lg">Flexible Timing</span>
+                  <span className="font-semibold text-sm sm:text-base md:text-lg">{t('flexibleTiming')}</span>
                 </div>
               </div>
             </CardContent>

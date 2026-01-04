@@ -1,0 +1,143 @@
+{
+    "nav": {
+        "fleet": "ನಮ್ಮ Vehicles",
+        "features": "Features",
+        "bookNow": "Book ಮಾಡಿ",
+        "contact": "Contact",
+        "brandName": "Best Cab Service",
+        "location": "ಗೌರಿಬಿದನೂರು"
+    },
+    "hero": {
+        "heading": {
+            "line1": "ಅತ್ಯುತ್ತಮ",
+            "line2": "ನಂಬಿಕೆಯ",
+            "line3": "ಕ್ಯಾಬ್ ಸೇವೆ"
+        },
+        "subtitle": "ಗೌರಿಬಿದನೂರಿನಲ್ಲಿ ನೀವು ನಂಬಬಹುದಾದ Car Service. Local ಇರಲಿ, Outstation ಇರಲಿ - 24/7 Available!",
+        "bookYourRide": "ನಿಮ್ಮ Ride Book ಮಾಡಿ",
+        "callSupport": "Call ಮಾಡಿ",
+        "stats": {
+            "rate": {
+                "label": "ದರ",
+                "value": "₹12/ಕಿ.ಮೀ"
+            },
+            "availability": {
+                "label": "ಲಭ್ಯತೆ",
+                "value": "24/7"
+            },
+            "status": {
+                "label": "ಸ್ಥಿತಿ",
+                "value": "ಪರಿಶೀಲಿತ"
+            }
+        }
+    },
+    "booking": {
+        "heading": {
+            "line1": "ನಿಮ್ಮ ಪ್ರಯಾಣ",
+            "line2": "ಬುಕ್",
+            "line3": "ಮಾಡಿ"
+        },
+        "description": "ಯಾವ Hidden Charges ಇಲ್ಲ, Price ಸರಿಯಾಗಿ ತಿಳಿಸುತ್ತೇವೆ. ಎಲ್ಲಾ Vehicles ಗೂ Kilometer ಗೆ ₹12 ಮಾತ್ರ.",
+        "currentRate": "ಈಗಿನ ದರ",
+        "perKm": "/ ಕಿ.ಮೀ",
+        "form": {
+            "fullName": "ನಿಮ್ಮ Name",
+            "fullNamePlaceholder": "Your full name",
+            "phoneNumber": "Phone Number",
+            "phoneNumberPlaceholder": "ನಿಮ್ಮ phone number",
+            "pickupLocation": "Pickup Location",
+            "pickupLocationPlaceholder": "ಎಲ್ಲಿಂದ pickup ಮಾಡಬೇಕು?",
+            "destination": "Destination",
+            "destinationPlaceholder": "ಎಲ್ಲಿಗೆ ಹೋಗಬೇಕು?",
+            "vehicleType": "Vehicle Type",
+            "fiveSeater": "5-Seater Car",
+            "sevenSeater": "7-Seater SUV/MPV"
+        },
+        "standardRate": "Standard Rate",
+        "transparentPricing": "ಎಲ್ಲಾ Rides ಗೂ Transparent Pricing",
+        "bookViaWhatsApp": "WhatsApp ನಲ್ಲಿ Book ಮಾಡಿ",
+        "callToBookNow": "Call ಮಾಡಿ Book ಮಾಡಿ",
+        "whatsappMessage": {
+            "greeting": "ನಮಸ್ಕಾರ, ನನಗೆ Cab Book ಮಾಡಬೇಕು:",
+            "name": "Name",
+            "phone": "Phone",
+            "pickup": "Pickup",
+            "destination": "Destination",
+            "vehicle": "Vehicle",
+            "rate": "Rate",
+            "confirmation": "ದಯವಿಟ್ಟು availability confirm ಮಾಡಿ."
+        }
+    },
+    "services": {
+        "heading": "ನಮ್ಮ Vehicles",
+        "description": "ನಿಮ್ಮ Journey ಗೆ Perfect ಆದ Comfortable Vehicles ಆಯ್ಕೆ ಮಾಡಿ",
+        "vehicles": {
+            "fiveSeater": {
+                "title": "5-Seater Cab",
+                "description": "Family ಮತ್ತು Small Groups ಗೆ Perfect. Local ಇರಲಿ Outstation ಇರಲಿ - Comfortable Sedan Cars.",
+                "features": {
+                    "sedan": "Sedan Cars",
+                    "ac": "AC Available",
+                    "luggage": "ಸಾಕಷ್ಟು Luggage Space"
+                }
+            },
+            "sevenSeater": {
+                "title": "7-Seater Cab",
+                "description": "Big Groups ಮತ್ತು Family Trips ಗೆ Best. SUV ಮತ್ತು MPV - ಸಾಕಷ್ಟು Space ಇದೆ.",
+                "features": {
+                    "suvMpv": "SUV / MPV",
+                    "ac": "AC Available",
+                    "luggage": "Extra Luggage Space"
+                }
+            }
+        },
+        "localOutstation": "Local & Outstation",
+        "flexibleTiming": "Flexible Timing"
+    },
+    "features": {
+        "heading": "Why Choose Us?",
+        "description": "ನಮ್ಮ Reliable ಮತ್ತು Customer-Focused Service ಅನುಭವಿಸಿ",
+        "items": {
+            "onTimePickup": {
+                "title": "On-Time Pickup",
+                "description": "ಯಾವಾಗಲೂ Time ಗೆ ಬಂದು ನಿಮ್ಮನ್ನು Destination ಗೆ ಸರಿಯಾಗಿ ಸೇರಿಸುತ್ತೇವೆ."
+            },
+            "cleanVehicles": {
+                "title": "Clean Vehicles",
+                "description": "ಯಾವಾಗಲೂ Clean ಆಗಿ ಇಟ್ಟುಕೊಂಡಿರುವ, Good Condition ನಲ್ಲಿರುವ Vehicles."
+            },
+            "experiencedDrivers": {
+                "title": "Experienced Drivers",
+                "description": "ಊರಿನ ಎಲ್ಲಾ Routes ಗೊತ್ತಿರುವ, Professional ಮತ್ತು Polite Drivers."
+            },
+            "affordablePricing": {
+                "title": "Affordable Pricing",
+                "description": "ಯಾವ Hidden Charges ಇಲ್ಲ. Transparent Pricing - ನೀವು ನೋಡುವುದೇ ನೀವು ಕೊಡುವುದು!"
+            }
+        }
+    },
+    "contact": {
+        "heading": "Contact Us",
+        "description": "Cab Book ಮಾಡೋದಕ್ಕೆ Ready ಆಗಿದ್ದೀರಾ? ಯಾವಾಗ ಬೇಕಾದರೂ Call ಮಾಡಿ - ನಾವು 24/7 Service ನಲ್ಲಿದ್ದೇವೆ",
+        "primaryContact": "Primary Contact",
+        "secondaryContact": "Secondary Contact",
+        "call": "Call ಮಾಡಿ",
+        "whatsapp": "WhatsApp",
+        "serviceArea": {
+            "heading": "Service Area",
+            "location": "ಗೌರಿಬಿದನೂರು - 561208",
+            "district": "ಚಿಕ್ಕಬಳ್ಳಾಪುರ District, Karnataka",
+            "description": "ಗೌರಿಬಿದನೂರು ಮತ್ತು Surrounding Areas ಗೆಲ್ಲ ನಾವು Service ಕೊಡುತ್ತೇವೆ - Local ಇರಲಿ Outstation ಇರಲಿ!"
+        }
+    },
+    "footer": {
+        "tagline": "Reliable ಮತ್ತು Affordable Cab Service ಗೆ ನಿಮ್ಮ Trusted Partner. ಕೇವಲ <rate>₹12/km</rate> - 24/7 Available.",
+        "quickContact": "Quick Contact",
+        "serviceArea": "Service Area",
+        "pincode": "Pincode: 561208",
+        "district": "ಚಿಕ್ಕಬಳ್ಳಾಪುರ District",
+        "state": "Karnataka, India",
+        "copyright": "© {year} Best Cab Service - ಗೌರಿಬಿದನೂರು. All Rights Reserved.",
+        "available": "24/7 Available"
+    }
+}

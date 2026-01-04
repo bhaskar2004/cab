@@ -1,0 +1,143 @@
+{
+    "nav": {
+        "fleet": "Fleet",
+        "features": "Features",
+        "bookNow": "Book Now",
+        "contact": "Contact",
+        "brandName": "Best Cab Service",
+        "location": "Gauribidanur"
+    },
+    "hero": {
+        "heading": {
+            "line1": "The Best",
+            "line2": "Reliable",
+            "line3": "Cab Service"
+        },
+        "subtitle": "Gauribidanur's most trusted executive transport. Available 24/7 for local and outstation travel.",
+        "bookYourRide": "Book Your Ride",
+        "callSupport": "Call Support",
+        "stats": {
+            "rate": {
+                "label": "Rate",
+                "value": "₹12/km"
+            },
+            "availability": {
+                "label": "Availability",
+                "value": "24/7"
+            },
+            "status": {
+                "label": "Status",
+                "value": "Verified"
+            }
+        }
+    },
+    "booking": {
+        "heading": {
+            "line1": "Book Your",
+            "line2": "Perfect",
+            "line3": "Ride"
+        },
+        "description": "Transparent pricing with no hidden costs. Calculated at ₹12 per km for all vehicle types in our fleet.",
+        "currentRate": "Current Rate",
+        "perKm": "/ km",
+        "form": {
+            "fullName": "Full Name",
+            "fullNamePlaceholder": "Enter your full name",
+            "phoneNumber": "Phone Number",
+            "phoneNumberPlaceholder": "Enter your phone number",
+            "pickupLocation": "Pickup Location",
+            "pickupLocationPlaceholder": "Enter pickup location",
+            "destination": "Destination",
+            "destinationPlaceholder": "Enter destination",
+            "vehicleType": "Vehicle Type",
+            "fiveSeater": "5-Seater Sedan",
+            "sevenSeater": "7-Seater SUV/MPV"
+        },
+        "standardRate": "Standard Rate",
+        "transparentPricing": "Transparent pricing for all rides",
+        "bookViaWhatsApp": "Book via WhatsApp",
+        "callToBookNow": "Call to Book Now",
+        "whatsappMessage": {
+            "greeting": "Hi, I would like to book a cab:",
+            "name": "Name",
+            "phone": "Phone",
+            "pickup": "Pickup",
+            "destination": "Destination",
+            "vehicle": "Vehicle",
+            "rate": "Rate",
+            "confirmation": "Please confirm availability."
+        }
+    },
+    "services": {
+        "heading": "Our Fleet",
+        "description": "Choose from our range of comfortable and well-maintained vehicles for your perfect journey",
+        "vehicles": {
+            "fiveSeater": {
+                "title": "5-Seater Cabs",
+                "description": "Perfect for families and small groups. Comfortable sedans for local and outstation trips.",
+                "features": {
+                    "sedan": "Sedan Cars",
+                    "ac": "AC Available",
+                    "luggage": "Spacious Luggage"
+                }
+            },
+            "sevenSeater": {
+                "title": "7-Seater Cabs",
+                "description": "Ideal for larger groups and family trips. Spacious SUVs and MPVs with ample room.",
+                "features": {
+                    "suvMpv": "SUV / MPV",
+                    "ac": "AC Available",
+                    "luggage": "Extra Luggage Space"
+                }
+            }
+        },
+        "localOutstation": "Local & Outstation",
+        "flexibleTiming": "Flexible Timing"
+    },
+    "features": {
+        "heading": "Why Choose Us",
+        "description": "Experience the difference with our reliable and customer-focused cab service",
+        "items": {
+            "onTimePickup": {
+                "title": "On-Time Pickup",
+                "description": "Punctual service ensuring you reach your destination on time, every time."
+            },
+            "cleanVehicles": {
+                "title": "Clean Vehicles",
+                "description": "Well-maintained and spotlessly clean cars for a comfortable ride."
+            },
+            "experiencedDrivers": {
+                "title": "Experienced Drivers",
+                "description": "Professional, courteous drivers with extensive local knowledge."
+            },
+            "affordablePricing": {
+                "title": "Affordable Pricing",
+                "description": "Transparent pricing with no hidden charges. Best rates guaranteed."
+            }
+        }
+    },
+    "contact": {
+        "heading": "Get In Touch",
+        "description": "Ready to book your ride? Contact us anytime - we're here to serve you 24/7",
+        "primaryContact": "Primary Contact",
+        "secondaryContact": "Secondary Contact",
+        "call": "Call",
+        "whatsapp": "WhatsApp",
+        "serviceArea": {
+            "heading": "Service Area",
+            "location": "Gauribidanur - 561208",
+            "district": "Chikkaballapur District, Karnataka",
+            "description": "We proudly serve Gauribidanur and all surrounding areas for both local trips and outstation journeys"
+        }
+    },
+    "footer": {
+        "tagline": "Your trusted partner for reliable and affordable cab services. Available 24/7 at just <rate>₹12/km</rate>.",
+        "quickContact": "Quick Contact",
+        "serviceArea": "Service Area",
+        "pincode": "Pincode: 561208",
+        "district": "Chikkaballapur District",
+        "state": "Karnataka, India",
+        "copyright": "© {year} Best Cab Service - Gauribidanur. All rights reserved.",
+        "available": "24/7 Available"
+    }
+}
